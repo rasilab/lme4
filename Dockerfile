@@ -4,3 +4,5 @@ RUN conda config --remove channels defaults
 RUN conda config --set channel_alias https://conda-forge.fredhutch.org
 
 RUN mamba install -y -n R -c conda-forge r-lme4 r-lmertest
+
+RUN mamba install -y -n R -c conda-forge r-broom.mixed
